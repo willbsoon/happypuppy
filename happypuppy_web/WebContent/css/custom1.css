@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+/* 사진 띄워주는 css */
+.thumbnail-wrappper {
+	width: 25%;
+}
+
+.thumbnail {
+	position: relative;
+	padding-top: 180%; /* 만약에 사진이 너무길어서 아래에 글이 짤릴경우 퍼센트 올리기 */
+	overflow: hidden;
+}
+
+.thumbnail .centered {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transform: translate(50%, 50%);
+	-ms-transform: translate(50%, 50%);
+	transform: translate(50%, 50%);
+}
+
+.thumbnail .centered img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	height: auto;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/* 로그인 css */
+.modal-header h4{
+	background-color: #02bdd5;
+	color: white !important;
+	text-align: center;
+	font-size: 30px;
+}
+.modal-dialog {
+	margin-top: 0px;
+}
+.modal-footer {
+	background-color: #02bdd5;
+}
+#login_face{
+	background-color: rgb(2, 89, 213);
+}
+#myModal{
+	padding-top: 0px;
+	height:520px;
+}
+.close {
+	background-color: #02bdd5;
+	color: black !important;
+	text-align: center;
+	font-size: 30px;
+	padding-right: 3px;
+	padding-top: 3px;
+}
+
+/* 회원가입*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* { font-family: 'Nanum Gothic', sans-serif; }
+
+.spaceLeft {
+  margin-left: 10px;
+}
+.spaceRight {
+  margin-right: 10px;
+}
+
+/* custom checkbox */
+.btn span.fa {
+	opacity: 0;
+}
+.btn.active span.fa {
+	opacity: 1;
+}
+
+/* custom table portfolio */
+#table_custom th {
+	background-color: #02bdd5;
+	color: white !important;
+	text-align: center;
+}
+#table_custom td {
+	background-color: #02bdd5;
+	color: white !important;
+	text-align: center;
+}
+#table_custom tr{
+	background-color: #02bdd5;
+	text-align: center;
+	color: white !important;
+}

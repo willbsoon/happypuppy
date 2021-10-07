@@ -1,0 +1,6 @@
+.idea
+.idea/*
+.settings/*
+build/*
+out/*
+WebContent/WEB-INF/lib/*.jar

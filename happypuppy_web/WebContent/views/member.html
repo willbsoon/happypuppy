@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>관리자 페이지</title>
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/menu.css" rel="stylesheet">
+    <link href="/css/table.css" rel="stylesheet">
+    <link href="/css/member.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-inner">HppyPuppy!</div>
+    </div>
+    <div id="left">
+        <ul>
+            <li><a href="/main">통계/차트</a></li><br>
+            <li><a href="/member">회원관리</a></li><br>
+            <li><a href="#">홈페이지</a></li><br>
+            <li><a href="/auth/logout">로그아웃</a></li><br>
+
+        </ul>
+
+    </div>
+    <div id="content">
+        <h1>회원 목록</h1>
+        <form>
+           <input type="text" id = "text"> <input type="button" id="search" value ="검색" />
+        </form>
+        <table>
+            <tr>
+                <th>userId</th>
+                <th>email</th>
+                <th>name</th>
+                <th>gender</th>
+                <th>born</th>
+                <th>profile</th>
+                <th>regDt</th>
+            </tr>
+
+            <% data.forEach(function(item,index){ %>
+                <tr class="gradeA">
+                    <td>
+                        <%= item.userId %>
+                    </td>
+                    <td>
+                        <%= item.email %>
+                    </td>
+
+                    <td>
+                        <%= item.name %>
+                    </td>
+                    <td>
+                        <%= item.gender %>
+                    </td>
+                    <td>
+                        <%= item.born %>
+                    </td>
+                    <td>
+                        <%= item.profile %>
+                    </td>
+                    <td>
+                        <%= item.regDt %>
+                    </td>
+
+                </tr>
+
+                <% }) %>
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>관리자 페이지</title>
+
+</head>
+<body>
+    <table>
+       <% data.forEach(function(item,index){ %>
+       <tr>
+           <td><%= item.userId %></td>
+           <td><%= item.email %></td>
+           <td><%= item.password %></td>
+           <td><%= item.name %></td>
+           <td><%= item.gender %></td>
+           <td><%= item.born %></td>
+           <td><%= item.profile %></td>
+           <td><%= item.regDt %></td>
+
+       </tr>
+
+       <% }) %>
+    </table>
+   
+   
+  
+ 
+</body>
+</html>

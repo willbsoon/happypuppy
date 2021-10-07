@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/eduuser/MLCNN/image/cnn_model.ckpt"
+all_model_checkpoint_paths: "/home/eduuser/MLCNN/image/cnn_model.ckpt"
